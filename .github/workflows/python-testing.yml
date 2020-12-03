@@ -26,4 +26,4 @@ jobs:
         if [ -f python_requirements.txt ]; then pip install -r python_requirements.txt; fi
     - name: Test with pytest
       run: |
-        pytest
+        pytest -vv

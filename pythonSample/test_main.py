@@ -16,4 +16,5 @@ def test_2():
 
 def test_dependencies():
     res = func1()
-    assert res != None
+    print(res)
+    assert False
