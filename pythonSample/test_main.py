@@ -13,3 +13,7 @@ def test_1():
 
 def test_2():
     assert True
+
+def test_dependencies():
+    res = func1()
+    assert res != None
