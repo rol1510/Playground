@@ -19,14 +19,16 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
-    - name: List installed packages before
+    - name: Setup tmp directory
       run: |
-        python -m pip list
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        python -m pip install pytest
-        if [ -f python_requirements.txt ]; then pip install -r python_requirements.txt; fi
-    - name: List installed packages after
-      run: |
-        python -m pip list
+        ls -a
+        mkdir tmp
+        ls -a
+    # - name: Install dependencies
+    #   run: |
+    #     python -m pip install --upgrade pip
+    #     python -m pip install pytest
+    #     if [ -f python_requirements.txt ]; then pip install -r python_requirements.txt; fi
+    # - name: List installed packages after
+    #   run: |
+    #     python -m pip list
