@@ -22,7 +22,7 @@ jobs:
     - name: Setup tmp directory
       run: |
         ls -a
-        cd \
+        cd /
         ls -a
     # - name: Install dependencies
     #   run: |
